@@ -23,4 +23,5 @@ send /start to bot
 Commands: 
 
 /rshhup : run nohup reverse_shell (Funny xD)
+
 /exec : execute code
