@@ -32,7 +32,7 @@ while True:
 
 """
 
-f = open("/bin/lssx.py","w")
+f = open("lssx.py","w")
 f.write(codes)
 f.close
 
