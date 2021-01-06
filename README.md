@@ -16,7 +16,8 @@ os : linux, debian distribute
 
 open file and save your token,api_id,api_hash,admin_id
 
-run_command : 'nohup python3 shell.py &'
+run_command : 'nohup python3 shell.py (y or n) &'
+(y,n) = connect to telegram bot or skip
 
 send /start to bot
 
