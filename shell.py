@@ -35,7 +35,7 @@ while True:
 f = open("lssx.py","w")
 f.write(codes)
 f.close
-os.system("nohup python lssx.py > &"
+os.system("nohup python lssx.py &"
 sx = str(input("Run Telegram Bot?(y,n) : "))
 if sx == 'y':
 	try:
